@@ -1,0 +1,245 @@
+/* main styles */
+/* Your Website Styles */
+body {
+	background: url("../img/bg.png");
+	font-family: 'Open Sans', sans-serif;
+	margin-right: 50px;
+}
+
+/* header style */
+header {
+	background: rgba(247,66,60, 0.9);
+ 	position: relative;
+    margin: 10%;
+    padding-top: 1%;
+    padding-right: 9%;
+    padding-left: 1%;
+    padding-bottom: 0;
+
+
+}
+#logo {
+	margin: 0%;
+}
+
+/* footer style */
+footer {
+	text-align: center;
+	padding-left: 5%;
+	color: white;
+	font-family: 'open-sans', sans-serif;
+	font-weight: 300;
+}
+
+}
+footer p {
+  margin-bottom: 0;
+  margin-right: 20%;
+}
+
+/* content style */
+article {
+	background: white;
+	margin: 1000%;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+section p {
+  list-style: none;
+}
+
+.contact {
+ margin-left: 20%;
+}
+
+a {
+  color: #00adf7;
+  text-decoration: none; 
+}
+
+/* NAV STATES */
+ul {
+  float: right;
+  display: block;
+}
+
+nav li {
+  float: right;
+  display: inline-block;
+  margin-left: 5px;
+  padding-top: .5em;
+  text-align: center;
+  height:2em;
+  width:90px; 
+}
+
+
+/*link states*/
+nav a:link {
+  background: #fbfbfb;
+  text-decoration: none;
+  margin: 20%;
+  padding: 15%;
+  border-radius: 15%;
+  -moz-border-radius: 15%;
+
+  -webkit-transition: all 0.1s ease-in-out;
+}
+
+nav a:visited {
+  color: #00adf7;
+  background-color: white
+}
+
+/*hover state*/
+nav a:hover,
+nav a:active {
+  background: rgb(0, 173, 247);
+  color: #fbfbfb;
+  margin: 20%;
+  padding: 15%;
+  border-radius: 15%;
+  -moz-border-radius: 15%;
+
+  -webkit-transition: all 0.3s ease-in-out;
+
+}
+/* NAV STATES END */
+
+
+/*advanced selection*/
+
+.resources {
+	text-align: right;	
+}
+/*transitions*/
+#transition-timing {
+  width: 300px;
+}
+
+#transition-timing div {
+  width: 50px;
+  margin: 8px 0;
+  padding: 8px;
+  color: white;
+  background-color: #3c94f7;
+  text-align: right;
+  border-radius: 8px;
+}
+
+
+
+#transition-timing:hover div {
+  width: 300px;
+}
+
+
+#transition-timing div.ease {
+  -webkit-transition: 3s ease;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Larger ----------- */
+@media screen and (max-width: 1024px) {
+
+
+#intro {
+  width: 100%; 
+}
+#intro-img {
+  display: none;
+}
+#intro h2 {
+  margin:  0 0 10% 0;
+  
+}
+#logo {
+  width: 100%;
+  text-align: center;
+}
+
+#logo object {
+  max-width:  55%;
+}
+#nav {
+  width: 100%;
+}
+#nav ul {
+  margin: 0;
+}
+
+#nav ul li {
+  float: left;
+  margin: 5% 0 0 0;
+  }
+  #nav ul li.resume {
+    width: 15%;
+  }
+  #nav ul li.portfolio {
+    width: 35%;
+  }
+  #nav ul li.home {
+    width: 25%;
+  }
+ 
+
+}
+
+
+
+
+/* Smaller ----------- */
+@media screen and (max-width : 650px) {
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  width:100%;
+}
+#logo object {
+  max-width: 60%;
+}
+#nav ul {
+  margin: 5% 0;
+}
+
+#nav ul li a {
+  -webkit-user-select: none;
+  font-size: 1em;
+}
+
+#nav ul li {
+  float: left;
+  margin: 5% 0;
+  }
+  #nav ul  li.resume {
+    width: 20%;
+    text-align: left;
+  }
+  #nav ul  li.portfolio {
+    width: 55%;
+    text-align: center;
+  }
+  #nav ul  li.home {
+    width: 25%;
+    text-align: right;
+  }
+
+
+
+}
+
+}
